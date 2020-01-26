@@ -90,10 +90,17 @@
   font-style: italic;
 }
 
+.dropdown-menu.show {
+    background-color: black !important;
+    position: relative;
+	font-size: 1em;
+	z-index: 7;
+}
+
 .site-logo {
   display: inline-block;
   position: relative;
-  z-index: 10;
+  z-index: 1;
 }
 
 .site-logo-img {
@@ -351,3 +358,4 @@
     }
   }
 }
+
