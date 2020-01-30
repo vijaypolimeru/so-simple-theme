@@ -9,12 +9,13 @@ body {
 }
 
 a {
-  color: $accent-color;
+  color: #0E1CE8;
 
   &:hover {
-    color: shade($accent-color, 25%);
+    color: shade(#E80E0E, 1%);
   }
-}
+} 
+
 
 blockquote {
   background-color: mix($background-color, $accent-color, 90%);
