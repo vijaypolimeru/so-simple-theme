@@ -13,12 +13,7 @@
       <div class="page-image-caption">{{ page.image.caption | markdownify }}</div>
     {% endif %}
 	
-		{% if page.header-img %}
-			<meta name="image" property="og:image" content="{{ page.header-img }}">
-		{% else %}
-			<meta name="image" property="og:image" content="{{ site.url }}">
-		{% endif %}
 
-		<meta name="description" property="og:description" content="{{ page.subtitle }}">
   </div>
 {% endif %}
+
