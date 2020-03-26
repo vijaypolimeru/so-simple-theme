@@ -4,6 +4,12 @@
     {% assign page_image = page_image | relative_url %}
   {% endunless %}
   {% assign page_image = page_image | escape %}
+  
+{% if page.header-img %}
+    <meta property="og:image" content="{{ site.url }}/{{ page.header-img }}" />
+{% endif %}
+
+<meta property="og:description" content="{{ page.subtitle }}" />
 
   <div class="page-image">
     <img src="{{ page_image }}" class="entry-feature-image u-photo" alt="{{ page.title }}" {% unless site.logo %}style="margin-top: 0;"{% endunless %}>
